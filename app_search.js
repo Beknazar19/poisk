@@ -8,16 +8,16 @@ tg.MainButton.setText("Кнопка для поиска"); //изменяем т
 tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
 tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
-tg.MainButton.show()
-tg.MainButton.enable()
+tg.MainButton.show();
+tg.MainButton.enable();
 
 var dict = {
    type_web_msg : "from search"
 };
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
-   tg.sendData(dictstring);
-   // tg.sendData("НАЙТИ КУРСЫ");
+   // tg.sendData(dictstring);
+   tg.sendData("НАЙТИ КУРСЫ");
    
    tg.window.close();
    //при клике на основную кнопку отправляем данные в строковом виде
