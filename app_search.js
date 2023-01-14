@@ -15,10 +15,11 @@ var dict = {
    type_web_msg : "from search"
 };
 
-Telegram.WebApp.onEvent('mainButtonClicked', function(){
+tg.onEvent('mainButtonClicked', function(){
    // tg.sendData(dictstring);
    tg.sendData("НАЙТИ КУРСЫ");
-   
+   tg.showAlert("Хорошо, ты нажал на главную кнопку.");
+
    tg.window.close();
    //при клике на основную кнопку отправляем данные в строковом виде
 });
