@@ -11,11 +11,13 @@ tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются в�
 tg.MainButton.show()
 tg.MainButton.enable()
 
-
+var dict = {
+   type_web_msg : "from search"
+};
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
-//    tg.sendData(dictstring);
-   tg.sendData("от веба: НАЙТИ КУРСЫ!");
+   tg.sendData(dictstring);
+   // tg.sendData("НАЙТИ КУРСЫ");
    
    tg.window.close();
    //при клике на основную кнопку отправляем данные в строковом виде
