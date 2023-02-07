@@ -1,14 +1,14 @@
-var  tg2 = window.Telegram.WebApp;
+var  tg3 = window.Telegram.WebApp;
 
-tg2.expand(); //расширяем на все окно
+tg3.expand(); //расширяем на все окно
 
-tg2.MainButton.text = "Готово"; //изменяем текст кнопки
-tg2.MainButton.setText("Поиск 1"); //изменяем текст кнопки иначе
-tg2.MainButton.textColor = "#e7e8e9"; //изменяем цвет текста кнопки
-tg2.MainButton.color = "#4682B4"; //изменяем цвет бэкграунда кнопки
-tg2.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
-tg2.MainButton.show();
-tg2.MainButton.enable();
+tg3.MainButton.text = "Готово"; //изменяем текст кнопки
+tg3.MainButton.setText("Поиск 1"); //изменяем текст кнопки иначе
+tg3.MainButton.textColor = "#e7e8e9"; //изменяем цвет текста кнопки
+tg3.MainButton.color = "#4682B4"; //изменяем цвет бэкграунда кнопки
+tg3.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
+tg3.MainButton.show();
+tg3.MainButton.enable();
 
 
 // //задаем формат для поле объем, чтобы только цифры были
@@ -94,13 +94,13 @@ value_opt6.onchange = onChange;
 value_opt7.onchange = onChange;
 
 
-tg2.onEvent('mainButtonClicked', function(){
+tg3.onEvent('mainButtonClicked', function(){
   onChange();
 
-  tg2.sendData(jsonString);
-  // tg2.sendData("От страницы ADS");
+  tg3.sendData(jsonString);
+  // tg3.sendData("От страницы ADS");
   // console.log(text_place);
 
-  tg2.window.close();
+  tg3.window.close();
   //при клике на основную кнопку отправляем данные в строковом виде
 });
